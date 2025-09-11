@@ -1,0 +1,94 @@
+/* .row__posters {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+  
+}
+.row__poster{
+    display: flex;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  transform: scale(1.00);
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  transform: scale(1.00);
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+} */
+
+/* .row {
+  margin-left: 20px;
+  color: #fff;
+} */
+
+.row h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.row_posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.row_poster {
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}

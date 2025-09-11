@@ -1,0 +1,19 @@
+// import axios from "axios";
+
+// const instance = axios.create({
+//   baseURL: "https://api.themoviedb.org/3",
+//   params: {
+//     REACT_APP :import.meta.env.VITE_API_KEY,
+//   }
+// });
+// export default instance;
+import axios from "axios";
+
+const instance = axios.create({
+  baseURL: "https://api.themoviedb.org/3",
+  params: {
+    api_key: import.meta.env.VITE_API_KEY,
+  },
+});
+
+export default instance;

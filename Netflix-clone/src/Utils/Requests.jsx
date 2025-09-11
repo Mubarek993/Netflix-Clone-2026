@@ -1,0 +1,17 @@
+// const REACT_APP = process.env.REACT_APP_API_KE;
+              //  const REACT_APP = import.meta.env.VITE_API_KEY;
+
+ const api_key = import.meta.env.VITE_API_KEY;
+const requests = {
+  fetchTrending: `/trending/all/week?api_key=${api_key}&language=en-US`,
+  fetchNetflixOriginals: `/discover/tv?api_key=${api_key}&with_networks=213`,
+  fetchTopRatedMovies: `/movie/top_rated?api_key=${api_key}&language=en-US`,
+  fetchActionMovies: `/discover/movie?api_key=${api_key}&with_genres=28`,
+  fetchComedyMovies: `/discover/movie?api_key=${api_key}&with_genres=35`,
+  fetchHorrorMovies: `/discover/movie?api_key=${api_key}&with_genres=27`,
+  fetchRomanceMovies: `/discover/movie?api_key=${api_key}&with_genres=10749`,
+  fetchDocumentaries: `/discover/movie?api_key=${api_key}&with_genres=99`,
+  fetchTVShows: `/tv/popular?api_key=${api_key}&language=en-US&page=1`,
+};
+
+export default requests;
